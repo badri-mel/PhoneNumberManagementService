@@ -39,9 +39,9 @@ The solution will be evaluated based on the following criteria:
 
 Method |Path| Description                       |               Format                |
 -------| ------------------------- |-----------------------------------|:-----------------------------------:|
-GET   | /v1/phone-numbers?page={page}&size={size}| Get all the phone numbers         |   |
-GET   | /v1/customers/{id}/phone-numbers         | Get all the phones for a customer ||
-PUT   | /v1/phone-number/{id}/activate           | Activate a phone number           ||
+GET   | /v1/phone-numbers?page={page}| Get all the phone numbers         |   |
+GET   | /v1/customers/{id}/phone-numbers | Get all the phones for a customer ||
+PUT   | /v1/phone-number/{id}/activate | Activate a phone number           ||
 
 
 ### Response DTOs formats 
