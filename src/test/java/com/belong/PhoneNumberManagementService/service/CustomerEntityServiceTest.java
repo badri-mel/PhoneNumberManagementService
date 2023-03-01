@@ -1,8 +1,7 @@
-package com.belong.PhoneNumberManagementService;
+package com.belong.PhoneNumberManagementService.service;
 
 import com.belong.PhoneNumberManagementService.entity.CustomerEntity;
 import com.belong.PhoneNumberManagementService.repository.CustomerRepository;
-import com.belong.PhoneNumberManagementService.service.CustomerService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

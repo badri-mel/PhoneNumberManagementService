@@ -215,5 +215,4 @@ VALUES(3, '0444555668', 'ACTIVE', 2);
 - The Initial data is assumed to be fed from the database.
 
 ### FUTURE WORK
-- The tests for controller can be added later since mocking unit tests are controller are not useful
 - Write integration tests using test containers in actual H2 DB in test profile

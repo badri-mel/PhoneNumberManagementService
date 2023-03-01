@@ -1,11 +1,10 @@
-package com.belong.PhoneNumberManagementService;
+package com.belong.PhoneNumberManagementService.service;
 
 import com.belong.PhoneNumberManagementService.dto.PhoneNumberResponseDto;
 import com.belong.PhoneNumberManagementService.entity.CustomerEntity;
 import com.belong.PhoneNumberManagementService.entity.PhoneNumberEntity;
 import com.belong.PhoneNumberManagementService.repository.CustomerRepository;
 import com.belong.PhoneNumberManagementService.repository.PhoneNumberRepository;
-import com.belong.PhoneNumberManagementService.service.PhoneNumberService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -18,8 +17,6 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 import static org.mockito.Mockito.when;
 
@@ -107,7 +104,7 @@ public class PhonenumberServiceTest {
                         .customerId(2L)
                         .status(PhoneNumberResponseDto.Status.ACTIVE)
                         .build()));
-        System.out.println(result.stream().toList());
+
         Assertions.assertTrue(isEqual);
 
 

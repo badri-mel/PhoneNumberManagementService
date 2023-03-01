@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class PhoneNumberController {
 
     public static final int PAGE_SIZE = 20;
+    public static final String ACTIVATED_SUCCESSFULLY = "Activated successfully";
 
     @Autowired
     private PhoneNumberService phoneNumberService;
@@ -32,7 +33,7 @@ public class PhoneNumberController {
     public ResponseEntity<?> activatePhoneNumber(@PathVariable Long phoneNumberId, @RequestParam(defaultValue = "ACTIVE") String status) {
         phoneNumberService.activatePhoneNumber(phoneNumberId, status);
         return ResponseEntity.ok(PhoneNumberActivationResponseDto.builder()
-                        .message("Activated successfully")
+                        .message(ACTIVATED_SUCCESSFULLY)
                 .build());
     }
 
